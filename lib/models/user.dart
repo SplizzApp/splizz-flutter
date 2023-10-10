@@ -1,10 +1,13 @@
+// import 'package:json_annotation/json_annotation.dart';
 import 'dart:ui';
 
+// @JsonSerializable()
 class User {
   final String uid;
   final String email;
   final String name;
-  final Color color;
+
+  // final Color? color;
 
   // final String? profilePic;
 
@@ -12,7 +15,7 @@ class User {
     required this.uid,
     required this.email,
     required this.name,
-    required this.color,
+    // this.color,
     // this.profilePic,
   });
 
@@ -21,7 +24,7 @@ class User {
       uid: json['uid'],
       email: json['email'],
       name: json['name'],
-      color: json['color'],
+      // color: json['color'],
       // profilePic: json['profilePic'],
     );
   }

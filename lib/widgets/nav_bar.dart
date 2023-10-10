@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:splizz/pages/home/home_friends.dart';
 
 class HomeTopNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final contextSize = MediaQuery.of(context).size;
     final font = 'Poppins';
 
     return Container(
-      height: contextSize.height * 0.04,
+      height: 40.h,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -18,7 +20,7 @@ class HomeTopNavBar extends StatelessWidget {
               'Hey Kyle,',
               style: TextStyle(
                 color: Color(0xFF111111),
-                fontSize: 28,
+                fontSize: 22.sp,
                 fontFamily: font,
                 fontWeight: FontWeight.w600,
               ),
@@ -30,20 +32,20 @@ class HomeTopNavBar extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   "assets/images/searchBlack.svg",
-                  width: 22,
-                  height: 22,
+                  width: 22.w,
+                  height: 22.h,
                 ),
-                const SizedBox(width: 15),
+                SizedBox(width: 15.w),
                 SvgPicture.asset(
                   "assets/images/NotificationBlack.svg",
-                  width: 22,
-                  height: 22,
+                  width: 22.w,
+                  height: 22.h,
                 ),
-                const SizedBox(width: 15),
+                SizedBox(width: 15.w),
                 SvgPicture.asset(
                   "assets/images/AddBlack.svg",
-                  width: 22,
-                  height: 22,
+                  width: 22.w,
+                  height: 22.h,
                 )
               ],
             ),
@@ -55,13 +57,19 @@ class HomeTopNavBar extends StatelessWidget {
 }
 
 class HomeBottomNavBar extends StatelessWidget {
+  final Color groupTextColor;
+  final Color friendsTextColor;
+
+  HomeBottomNavBar(
+      {required this.groupTextColor, required this.friendsTextColor});
+
   @override
   Widget build(BuildContext context) {
-    final contextSize = MediaQuery.of(context).size;
     final font = 'Poppins';
 
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 60),
+      height: 80.h,
+      padding: EdgeInsets.symmetric(horizontal: 60.w),
       decoration: BoxDecoration(
         color: Color(0xFF111111),
       ),
@@ -69,33 +77,34 @@ class HomeBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           TextButton(
-            onPressed: () {},
-            child: TextButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                foregroundColor: Color(0xFF111111),
-              ),
-              child: Text(
-                'Groups',
-                style: TextStyle(
-                  color: Color(0xFFFFFFFF),
-                  fontSize: 18,
-                  fontFamily: font,
-                  fontWeight: FontWeight.w400,
-                ),
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home/groups');
+            },
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Color(0xFF111111),
+            ),
+            child: Text(
+              'Groups',
+              style: TextStyle(
+                color: groupTextColor,
+                fontSize: 18.sp,
+                fontFamily: font,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home/friends');
+            },
             style: ElevatedButton.styleFrom(
               foregroundColor: Color(0xFF111111),
             ),
             child: Text(
               'Friends',
               style: TextStyle(
-                color: Color(0xFFBBBBBB),
-                fontSize: 18,
+                color: friendsTextColor,
+                fontSize: 18.sp,
                 fontFamily: font,
                 fontWeight: FontWeight.w400,
               ),

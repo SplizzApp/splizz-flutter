@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "Kyle Lee",
+    "email": "kyle.l@splizz.com"
+  },
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.d@splizz.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "email": "jane.d@splizz.com"
+  },
+  {
+    "id": 3,
+    "name": "Sam Smith",
+    "email": "sam.s@splizz.com"
+  },
+  {
+    "id": 4,
+    "name": "Angelina Smith",
+    "email": "angelina.s@splizz.com"
+  }
+]

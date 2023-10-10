@@ -33,12 +33,12 @@ dependencies:
   flutter_svg: 2.0.7
   flutter_sticky_header: ^0.6.5
   flutter_dash: ^1.0.0
-  responsive_framework: ^1.1.1
   flutter_screenutil: ^5.9.0
+  json_serializable: ^6.7.1
 
   # Firebase Dependencies
-#  firebase_core: ^2.17.0
-#  cloud_firestore: ^4.9.3
+  #  firebase_core: ^2.17.0
+  #  cloud_firestore: ^4.9.3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -68,6 +68,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/test_data/
 
   fonts:
     - family: SFProText

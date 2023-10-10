@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'welcome_page.dart';
+import 'package:splizz/pages/welcome_page.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -33,34 +34,30 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment(0.00, -1.00),
-          end: Alignment(0, 1),
-          colors: [
-            Color(0xFF010101),
-            Color(0xFF010101),
-          ],
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment(0.00, -1.00),
+            end: Alignment(0, 1),
+            colors: [
+              Color(0xFF010101),
+              Color(0xFF010101),
+            ],
+          ),
         ),
-      ),
-      child: Center(
-        child: splash(context),
+        child: Center(
+          child: Text(
+            'Splizz',
+            style: TextStyle(
+              color: Color(0xFFFFFFFF),
+              fontSize: 36.sp,
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
       ),
     );
   }
-}
-
-Widget splash(BuildContext context) {
-  return Container(
-    child: Text(
-      'Splizz',
-      style: TextStyle(
-        color: Color(0xFFFFFFFF),
-        fontSize: 48,
-        fontFamily: 'Poppins',
-        fontWeight: FontWeight.w600,
-      ),
-    ),
-  );
 }

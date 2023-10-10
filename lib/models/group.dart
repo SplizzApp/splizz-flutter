@@ -3,8 +3,8 @@ class Group {
   final String name;
   final int owner_id;
   // final String description;
-  final List<int> members;
-  final List<String> expeneses;
+  final List<dynamic> members;
+  final List<dynamic> expenses;
 
   Group({
     required this.gid,
@@ -12,7 +12,7 @@ class Group {
     required this.owner_id,
     // required this.description,
     required this.members,
-    required this.expeneses,
+    required this.expenses,
   });
 
   factory Group.fromJson(Map<String, dynamic> json) {
@@ -22,7 +22,7 @@ class Group {
       owner_id: json['owner_id'],
       // description: json['description'],
       members: json['members'],
-      expeneses: json['expeneses'],
+      expenses: json['expenses'],
     );
   }
 }

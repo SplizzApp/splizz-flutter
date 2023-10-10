@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Toronto Dinner",
+    "gid": 0,
+    "owner_id": 0,
+    "members": [
+      0,
+      1,
+      2
+    ],
+    "expenses": [
+      "Dinner",
+      "Drinks"
+    ]
+  },
+  {
+    "name": "UWaterloo",
+    "gid": 1,
+    "owner_id": 0,
+    "members": [
+      0,
+      1,
+      2
+    ],
+    "expenses": [
+      "lab_equipment",
+      "textbooks"
+    ]
+  },
+  {
+    "name": "Trip",
+    "gid": 2,
+    "owner_id": 0,
+    "members": [
+      0,
+      1,
+      2
+    ],
+    "expenses": [
+      "flight",
+      "accommodation"
+    ]
+  },
+  {
+    "name": "Korean BBQ",
+    "gid": 3,
+    "owner_id": 0,
+    "members": [
+      1,
+      2,
+      4
+    ],
+    "expenses": [
+      "food",
+      "drinks"
+    ]
+  }
+]
