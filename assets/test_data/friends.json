@@ -1,152 +1,128 @@
 [
   {
     "uid": 0,
-    "name": "Kyle Lee",
-    "email": "kyle.l@splizz.com"
+    "name": "Alice Johnson",
+    "email": "alice.j@example.com",
+    "balance": 50
   },
   {
     "uid": 1,
-    "name": "John Doe",
-    "email": "john.d@splizz.com"
+    "name": "Bob Smith",
+    "email": "bob.s@example.com",
+    "balance": -20
   },
   {
     "uid": 2,
-    "name": "Jane Doe",
-    "email": "jane.d@splizz.com"
+    "name": "Charlie Brown",
+    "email": "charlie.b@example.com",
+    "balance": 75
   },
   {
     "uid": 3,
-    "name": "Sam Smith",
-    "email": "sam.s@splizz.com"
+    "name": "David Wilson",
+    "email": "david.w@example.com",
+    "balance": -45
   },
   {
     "uid": 4,
-    "name": "Angelina Smith",
-    "email": "angelina.s@splizz.com"
+    "name": "Emma Davis",
+    "email": "emma.d@example.com",
+    "balance": 60
   },
   {
     "uid": 5,
-    "name": "Emily Johnson",
-    "email": "emily.j@splizz.com"
+    "name": "Frank Miller",
+    "email": "frank.m@example.com",
+    "balance": -10
   },
   {
     "uid": 6,
-    "name": "Michael Brown",
-    "email": "michael.b@splizz.com"
+    "name": "Grace Taylor",
+    "email": "grace.t@example.com",
+    "balance": 35
   },
   {
     "uid": 7,
-    "name": "Sarah Wilson",
-    "email": "sarah.w@splizz.com"
+    "name": "Henry Turner",
+    "email": "henry.t@example.com",
+    "balance": -5
   },
   {
     "uid": 8,
-    "name": "David Miller",
-    "email": "david.m@splizz.com"
+    "name": "Ivy Hernandez",
+    "email": "ivy.h@example.com",
+    "balance": 25
   },
   {
     "uid": 9,
-    "name": "Olivia Davis",
-    "email": "olivia.d@splizz.com"
+    "name": "Jack Wright",
+    "email": "jack.w@example.com",
+    "balance": -15
   },
   {
     "uid": 10,
-    "name": "Matthew Taylor",
-    "email": "matthew.t@splizz.com"
+    "name": "Katie Lewis",
+    "email": "katie.l@example.com",
+    "balance": 40
   },
   {
     "uid": 11,
-    "name": "Sophia Martinez",
-    "email": "sophia.m@splizz.com"
+    "name": "Liam Clark",
+    "email": "liam.c@example.com",
+    "balance": -30
   },
   {
     "uid": 12,
-    "name": "William White",
-    "email": "william.w@splizz.com"
+    "name": "Mia Thomas",
+    "email": "mia.t@example.com",
+    "balance": 20
   },
   {
     "uid": 13,
-    "name": "Ava Harris",
-    "email": "ava.h@splizz.com"
+    "name": "Nathan White",
+    "email": "nathan.w@example.com",
+    "balance": -25
   },
   {
     "uid": 14,
-    "name": "James Anderson",
-    "email": "james.a@splizz.com"
+    "name": "Olivia Davis",
+    "email": "olivia.d@example.com",
+    "balance": 15
   },
   {
     "uid": 15,
-    "name": "Mia Thomas",
-    "email": "mia.t@splizz.com"
+    "name": "Parker Harris",
+    "email": "parker.h@example.com",
+    "balance": -35
   },
   {
     "uid": 16,
-    "name": "Benjamin Garcia",
-    "email": "benjamin.g@splizz.com"
+    "name": "Quinn Martinez",
+    "email": "quinn.m@example.com",
+    "balance": 70
   },
   {
     "uid": 17,
-    "name": "Charlotte Lopez",
-    "email": "charlotte.l@splizz.com"
+    "name": "Riley Garcia",
+    "email": "riley.g@example.com",
+    "balance": -60
   },
   {
     "uid": 18,
-    "name": "Elijah Wilson",
-    "email": "elijah.w@splizz.com"
+    "name": "Samantha Hall",
+    "email": "samantha.h@example.com",
+    "balance": 10
   },
   {
     "uid": 19,
-    "name": "Grace Clark",
-    "email": "grace.c@splizz.com"
+    "name": "Thomas Baker",
+    "email": "thomas.b@example.com",
+    "balance": -50
   },
   {
     "uid": 20,
-    "name": "Daniel Martinez",
-    "email": "daniel.m@splizz.com"
-  },
-  {
-    "uid": 21,
-    "name": "Lily Allen",
-    "email": "lily.a@splizz.com"
-  },
-  {
-    "uid": 22,
-    "name": "Henry Turner",
-    "email": "henry.t@splizz.com"
-  },
-  {
-    "uid": 23,
-    "name": "Sofia Brown",
-    "email": "sofia.b@splizz.com"
-  },
-  {
-    "uid": 24,
-    "name": "Jack Wright",
-    "email": "jack.w@splizz.com"
-  },
-  {
-    "uid": 25,
-    "name": "Chloe Lewis",
-    "email": "chloe.l@splizz.com"
-  },
-  {
-    "uid": 26,
-    "name": "Aiden Davis",
-    "email": "aiden.d@splizz.com"
-  },
-  {
-    "uid": 27,
-    "name": "Zoe Adams",
-    "email": "zoe.a@splizz.com"
-  },
-  {
-    "uid": 28,
-    "name": "Jackson Hall",
-    "email": "jackson.h@splizz.com"
-  },
-  {
-    "uid": 29,
-    "name": "Mila Moore",
-    "email": "mila.m@splizz.com"
+    "name": "Uma Smith",
+    "email": "uma.s@example.com",
+    "balance": 45
   }
 ]

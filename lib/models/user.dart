@@ -2,6 +2,7 @@ class User {
   final int uid;
   final String name;
   final String email;
+  final int balance;
 
   // final Color? color;
 
@@ -11,6 +12,7 @@ class User {
     required this.uid,
     required this.name,
     required this.email,
+    required this.balance,
     // this.color,
     // this.profilePic,
   });
@@ -20,6 +22,7 @@ class User {
       uid: json['uid'],
       name: json['name'],
       email: json['email'],
+      balance: json['balance'] as int,
       // color: json['color'],
       // profilePic: json['profilePic'],
     );

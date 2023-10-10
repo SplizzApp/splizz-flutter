@@ -87,7 +87,7 @@ class HomeBottomNavBar extends StatelessWidget {
               'Groups',
               style: TextStyle(
                 color: groupTextColor,
-                fontSize: 18.sp,
+                fontSize: 16.sp,
                 fontFamily: font,
                 fontWeight: FontWeight.w400,
               ),
@@ -104,7 +104,7 @@ class HomeBottomNavBar extends StatelessWidget {
               'Friends',
               style: TextStyle(
                 color: friendsTextColor,
-                fontSize: 18.sp,
+                fontSize: 16.sp,
                 fontFamily: font,
                 fontWeight: FontWeight.w400,
               ),

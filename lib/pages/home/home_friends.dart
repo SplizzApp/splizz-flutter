@@ -50,6 +50,13 @@ class HomeFriends extends StatelessWidget {
                               ),
                               itemBuilder: (context, index) {
                                 var friend = snapshot.data![index];
+                                var absBalance = friend.balance.abs();
+                                var isPositive = friend.balance >= 0;
+                                var prefix =
+                                    isPositive ? 'Owes you' : 'You owe';
+                                var color = isPositive
+                                    ? Color(0xFF00B341)
+                                    : Color(0xFFE60000);
                                 return Container(
                                   height: 40.h,
                                   child: TextButton(
@@ -62,28 +69,22 @@ class HomeFriends extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Container(
-                                          height: 24.h,
-                                          child: Text(
-                                            friend.name,
-                                            style: TextStyle(
-                                              color: Color(0xFF111111),
-                                              fontSize: 16.sp,
-                                              fontWeight: FontWeight.w500,
-                                              fontFamily: 'Poppins',
-                                            ),
+                                        Text(
+                                          friend.name,
+                                          style: TextStyle(
+                                            color: Color(0xFF111111),
+                                            fontSize: 12.sp,
+                                            fontWeight: FontWeight.w500,
+                                            fontFamily: 'Poppins',
                                           ),
                                         ),
-                                        Container(
-                                          height: 24.h,
-                                          child: Text(
-                                            friend.email,
-                                            style: TextStyle(
-                                              color: Color(0xFF707070),
-                                              fontSize: 16.sp,
-                                              fontWeight: FontWeight.w400,
-                                              fontFamily: 'Poppins',
-                                            ),
+                                        Text(
+                                          '$prefix CAD \$$absBalance',
+                                          style: TextStyle(
+                                            color: color,
+                                            fontSize: 12.sp,
+                                            fontWeight: FontWeight.w400,
+                                            fontFamily: 'Poppins',
                                           ),
                                         ),
                                       ],
@@ -93,7 +94,6 @@ class HomeFriends extends StatelessWidget {
                               },
                             );
                           } else {
-                            print(snapshot.hasData);
                             return const Center(
                               child: CircularProgressIndicator(
                                 color: Color(0xFF111111),

@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(390, 844),
+      designSize: const Size(390.0, 844.0),
       builder: (context, child) {
         return MaterialApp(
           title: 'Splizz',
@@ -38,6 +38,12 @@ class MyApp extends StatelessWidget {
             textTheme: textTheme,
           ),
           home: SplashPage(),
+          builder: (context, child) {
+            return MediaQuery(
+              data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+              child: child!,
+            );
+          },
           routes: {
             '/home/groups': (context) => HomePage(),
             '/home/friends': (context) => HomeFriends(),
