@@ -39,9 +39,8 @@ class MyApp extends StatelessWidget {
           ),
           home: SplashPage(),
           routes: {
-            '/home/friends': (context) => HomeFriends(),
             '/home/groups': (context) => HomePage(),
-            // Define a named route for the second page
+            '/home/friends': (context) => HomeFriends(),
           },
         );
       },

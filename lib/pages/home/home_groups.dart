@@ -4,7 +4,7 @@ import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 
-import 'package:splizz/pages/group_page.dart';
+import 'package:splizz/pages/groupDetail/group_page.dart';
 import 'package:splizz/models/group.dart';
 
 class mainGroup extends StatelessWidget {

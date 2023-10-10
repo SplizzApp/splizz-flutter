@@ -51,7 +51,7 @@ class _SplashPageState extends State<SplashPage> {
             'Splizz',
             style: TextStyle(
               color: Color(0xFFFFFFFF),
-              fontSize: 36.sp,
+              fontSize: 48.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w600,
             ),

@@ -3,56 +3,70 @@
     "name": "Toronto Dinner",
     "gid": 0,
     "owner_id": 0,
-    "members": [
-      0,
-      1,
-      2
-    ],
-    "expenses": [
-      "Dinner",
-      "Drinks"
-    ]
+    "members": [0, 1, 2],
+    "expenses": ["Dinner", "Drinks"]
   },
   {
     "name": "UWaterloo",
     "gid": 1,
     "owner_id": 0,
-    "members": [
-      0,
-      1,
-      2
-    ],
-    "expenses": [
-      "lab_equipment",
-      "textbooks"
-    ]
+    "members": [3, 4, 5],
+    "expenses": ["lab_equipment", "textbooks"]
   },
   {
     "name": "Trip",
     "gid": 2,
-    "owner_id": 0,
-    "members": [
-      0,
-      1,
-      2
-    ],
-    "expenses": [
-      "flight",
-      "accommodation"
-    ]
+    "owner_id": 1,
+    "members": [6, 7, 8],
+    "expenses": ["flight", "accommodation"]
   },
   {
     "name": "Korean BBQ",
     "gid": 3,
-    "owner_id": 0,
-    "members": [
-      1,
-      2,
-      4
-    ],
-    "expenses": [
-      "food",
-      "drinks"
-    ]
+    "owner_id": 2,
+    "members": [9, 10, 11],
+    "expenses": ["food", "drinks"]
+  },
+  {
+    "name": "Birthday Party",
+    "gid": 4,
+    "owner_id": 3,
+    "members": [12, 13, 14],
+    "expenses": ["cake", "decorations"]
+  },
+  {
+    "name": "Beach Day",
+    "gid": 5,
+    "owner_id": 4,
+    "members": [15, 16, 17],
+    "expenses": ["beach towels", "sunscreen"]
+  },
+  {
+    "name": "Movie Night",
+    "gid": 6,
+    "owner_id": 5,
+    "members": [18, 19, 20],
+    "expenses": ["movie tickets", "popcorn"]
+  },
+  {
+    "name": "Gaming Tournament",
+    "gid": 7,
+    "owner_id": 6,
+    "members": [21, 22, 23],
+    "expenses": ["gaming consoles", "snacks"]
+  },
+  {
+    "name": "Picnic",
+    "gid": 8,
+    "owner_id": 7,
+    "members": [24, 25, 26],
+    "expenses": ["picnic baskets", "blankets"]
+  },
+  {
+    "name": "Book Club",
+    "gid": 9,
+    "owner_id": 8,
+    "members": [27, 28, 29],
+    "expenses": ["books", "refreshments"]
   }
 ]

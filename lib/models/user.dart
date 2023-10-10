@@ -1,11 +1,7 @@
-// import 'package:json_annotation/json_annotation.dart';
-import 'dart:ui';
-
-// @JsonSerializable()
 class User {
-  final String uid;
-  final String email;
+  final int uid;
   final String name;
+  final String email;
 
   // final Color? color;
 
@@ -13,8 +9,8 @@ class User {
 
   User({
     required this.uid,
-    required this.email,
     required this.name,
+    required this.email,
     // this.color,
     // this.profilePic,
   });
@@ -22,8 +18,8 @@ class User {
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       uid: json['uid'],
-      email: json['email'],
       name: json['name'],
+      email: json['email'],
       // color: json['color'],
       // profilePic: json['profilePic'],
     );

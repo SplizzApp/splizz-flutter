@@ -59,7 +59,7 @@ Widget centerLogo = Container(
     'Splizz',
     style: TextStyle(
       color: Color(0xFF010101),
-      fontSize: 36.sp,
+      fontSize: 48.sp,
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w600,
     ),
