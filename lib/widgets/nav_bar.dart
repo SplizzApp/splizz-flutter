@@ -8,6 +8,8 @@ class HomeTopNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final font = 'Poppins';
+    final widgetWidth = 20.w;
+    final widgetHeight = 20.h;
 
     return Container(
       height: 40.h,
@@ -20,7 +22,7 @@ class HomeTopNavBar extends StatelessWidget {
               'Hey Kyle,',
               style: TextStyle(
                 color: Color(0xFF111111),
-                fontSize: 22.sp,
+                fontSize: 20.sp,
                 fontFamily: font,
                 fontWeight: FontWeight.w600,
               ),
@@ -32,20 +34,20 @@ class HomeTopNavBar extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   "assets/images/searchBlack.svg",
-                  width: 22.w,
-                  height: 22.h,
+                  width: widgetWidth,
+                  height: widgetHeight,
                 ),
                 SizedBox(width: 15.w),
                 SvgPicture.asset(
                   "assets/images/NotificationBlack.svg",
-                  width: 22.w,
-                  height: 22.h,
+                  width: widgetWidth,
+                  height: widgetHeight,
                 ),
                 SizedBox(width: 15.w),
                 SvgPicture.asset(
                   "assets/images/AddBlack.svg",
-                  width: 22.w,
-                  height: 22.h,
+                  width: widgetWidth,
+                  height: widgetHeight,
                 )
               ],
             ),

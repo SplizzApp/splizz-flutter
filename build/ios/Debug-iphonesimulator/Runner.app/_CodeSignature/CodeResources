@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		tJBz5HQLSJcNtieZLotD4VDNNgc=
+		y0XaUG2KQH/V7gV13el6uR2Ese4=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YoDfGIyeLfGetfU+v6opzlfYUEk=
+		jdscaaCDHAGe7DuAtoZbJh0sklk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/test_data/friends.json</key>
 		<data>
-		ZXuD4gV1ses99ITyCSjV2lVgVk8=
+		T0IeinLQTWGYuvyW6zya+aUDYF0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/test_data/groups.json</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		cglpYWknSU8BF8KsK71QkWPFwQQ=
+		MW6ccLixS/80P7T1d/nPfGCLdag=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -361,7 +361,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h7Qpjrk3cMHsssaiTiRC8kHb+Jz8EAp+gww+i6NJyM0=
+			5X7IkFyQjHa1E9hD0PF+eiyHXlQbaUOrtvVLJkhgTC0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -375,7 +375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OQjuYAJPc2HjMdNkwdPi3si5Mud/t4bO96OMBcHgB9g=
+			8Y8oIO6/KzmGyVROI6OzhWieTxvS9Kv/rOLSjBvSFtE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -564,7 +564,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9aWrCW27LmaOJPiANh4THbEeR2Ya8ZG5Bnd5XI0z5vU=
+			pa+fENd0EkPqIzIDfaQDdsOG8aO4Musv9djCL9j94tM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/test_data/groups.json</key>
@@ -592,7 +592,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			60omv/XWN31RlrQRKDDWNJdi4ubvskb40R+nd76fpts=
+			Wo0C366ZAK7ZPfs7qQBdBDl80+ZAKpJBT/LaD4q5n3E=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

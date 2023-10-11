@@ -6,11 +6,12 @@ import 'package:flutter_dash/flutter_dash.dart';
 
 import 'package:splizz/pages/groupDetail/group_page.dart';
 import 'package:splizz/models/group.dart';
+import 'package:splizz/utils/load_json.dart';
 
 class mainGroup extends StatelessWidget {
   final font = 'Poppins';
 
-  Group group;
+  final Group group;
 
   mainGroup({required this.group});
 
@@ -272,23 +273,61 @@ class mainGroup extends StatelessWidget {
   }
 }
 
-class StackedGroup extends StatelessWidget {
-  final String font = 'Poppins';
-  final Group group;
-  final Color bgColor;
+class StackedGroups extends StatelessWidget {
+  StackedGroups({super.key});
 
-  const StackedGroup({
-    super.key,
-    required this.group,
-    required this.bgColor,
-  });
+  ScrollController controller = ScrollController();
 
-  void initState() {}
+  final Future<List<Group>> groups = getGroups('assets/test_data/groups.json');
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: mainGroup(group: group),
+    return FutureBuilder(
+      future: groups,
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Expanded(
+            child: ListView.builder(
+              controller: controller,
+              scrollDirection: Axis.vertical,
+              physics: BouncingScrollPhysics(),
+              itemCount: snapshot.data!.length,
+              itemBuilder: (context, index) {
+                var group = snapshot.data![index];
+                double scale = 1.0;
+                // if (controller.hasClients) {
+                //   double offset = controller.offset;
+                //   if (offset > 0) {
+                //     scale = 1 - offset / 1000;
+                //     if (scale < 0) {
+                //       scale = 0;
+                //     }
+                //   }
+                // }
+                return Transform(
+                  transform: Matrix4.identity()..scale(scale, scale),
+                  child: Align(
+                    heightFactor: 0.3,
+                    alignment: Alignment.topCenter,
+                    child: _groupItem(group),
+                  ),
+                );
+              },
+            ),
+          );
+        } else {
+          return const Center(
+            child: CircularProgressIndicator(
+              color: Color(0xFF111111),
+              strokeWidth: 2.0,
+            ),
+          );
+        }
+      },
     );
   }
+}
+
+Widget _groupItem(Group group) {
+  return mainGroup(group: group);
 }

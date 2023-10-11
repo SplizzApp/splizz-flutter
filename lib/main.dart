@@ -11,6 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:splizz/pages/splash_page.dart';
 import 'package:splizz/pages/home/home_friends.dart';
 import 'package:splizz/pages/home/home_page.dart';
+import 'package:splizz/pages/app.dart';
 
 // Config
 import 'package:splizz/config/text_styles.dart';
@@ -37,16 +38,13 @@ class MyApp extends StatelessWidget {
             scaffoldBackgroundColor: Color(0xFFFFFFFF),
             textTheme: textTheme,
           ),
-          home: SplashPage(),
+          // home: SplashPage(),
+          home: App(),
           builder: (context, child) {
             return MediaQuery(
               data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
               child: child!,
             );
-          },
-          routes: {
-            '/home/groups': (context) => HomePage(),
-            '/home/friends': (context) => HomeFriends(),
           },
         );
       },
